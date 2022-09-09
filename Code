@@ -1,0 +1,40 @@
+//Jayden Brown
+//Lab 2: CPSC 2500
+//Practicing formatting with C++ in Visual Studio
+#include <iomanip>
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	//ofstream outfile;
+	//outfile.open("source.txt");
+
+	double totalColl = 26572.89087, sales = 25068.7993,
+		countyTax = 501.76, stateTax = 1002.75212,
+		totalTax = 1504.12890;
+
+	int A = 5, B = 15, C = 25;
+	
+	
+	//Prints out second table
+	cout << "MONTH: September 2022\n"
+		<< "---------------------------------\n"
+		<< "Total Collected" << setw(8) << "$" << setw(10)
+		<< fixed << setprecision(2) << totalColl << "\n"
+		<< "Sales" << setw(18) << "$" << setw(10) << sales << "\n"
+		<< "County Tax" << setw(13) << "$" << setw(10) << countyTax << "\n"
+		<< "State Tax" << setw(14) << "$" << setw(10) << stateTax << "\n"
+		<< "Total Tax" << setw(14) << "$" << setw(10) << totalTax << "\n";
+	
+	
+	//Prints out first table
+	cout << setw(14) << "A" << setw(11) << "B" << setw(11) << "C\n"
+		<< "*************************************\n"
+		<< "X1" << setw(12) << A << setw(12) << B << setw(10) << C << "\n"
+		<< "X10" << setw(11) << (A * 10) << setw(12) << (B * 10) << setw(10) << (C * 10) << "\n"
+		<< "X100" << setw(10) << (A * 100) << setw(12) << (B * 100) << setw(10) << (C * 100) << "\n";
+	//outfile.close();
+	return 0;
+}
