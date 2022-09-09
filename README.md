@@ -1,5 +1,5 @@
 # Practice-with-C-Formatting
-Formatting tables with C ++ in Visual Studio Code
+# Formatting tables with C ++ in Visual Studio Code
 
 LAB 4 – Assignment  
 Write a program to print to a file the following 2 tables exactly as they appear, with columns 
